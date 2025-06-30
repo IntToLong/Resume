@@ -171,6 +171,9 @@
   }
 }
 @layer utilities {
+  .static {
+    position: static;
+  }
   .m-3 {
     margin: calc(var(--spacing) * 3);
   }
@@ -188,6 +191,9 @@
   }
   .mb-5 {
     margin-bottom: calc(var(--spacing) * 5);
+  }
+  .contents {
+    display: contents;
   }
   .flex {
     display: flex;
