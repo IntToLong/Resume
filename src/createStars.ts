@@ -30,7 +30,7 @@ document.addEventListener('mousemove', (e) => {
 });
 
 export const createStars = () => {
-	const canvas = document.getElementById('canvas');
+	const canvas = document.getElementById('canvas') as HTMLCanvasElement;
 	const renderer = new THREE.WebGLRenderer({ canvas });
 	renderer.setClearColor(new THREE.Color('#1c1624'));
 	const scene = new THREE.Scene();
@@ -89,7 +89,7 @@ export const createStars = () => {
 	scene.add(starsT1);
 	scene.add(starsT2);
 
-	const render = (time) => {
+	const render = () => {
 		// time *= 0.001; //in seconds
 
 		if (resizeRendererToDisplaySize(renderer)) {
