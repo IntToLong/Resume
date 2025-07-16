@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/cv.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Resume - Nataliia Liubynets</title>
+</head>
+
+<body class="h-full w-full cursor-[url(rocket.svg),_default]">
+  <canvas id="canvas" class="w-full h-full fixed -z-10 block top-0 left-0 print:hidden"></canvas>
+  <div class="z-10 bg-transparent w-[950px] mx-auto py-10 cursor-default print:hidden">
+    <ul class="flex justify-between items-center cursor-pointer text-white">
+      <li>
+
+        <button id="theme"
+          class="bg-yellow-200 dark:bg-gray-800 h-10 w-23 flex justify-between items-center text-center relative rounded-full inset-shadow-lg inset-shadow-indigo-500 cursor-pointer select-none outline-none">
+          <span class="bg-yellow-400 shadow-xl dark:bg-slate-600
+              dark:translate-x-14 rounded-full w-9 h-9 flex items-center justify-center transition-all duration-900 ">
+          </span>
+          <svg width="64px" height="64px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+            class="w-8 absolute left-0.5">
+            <g id="SVGRepo_bgCarrier" stroke-width="0" />
+            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" />
+            <g id="SVGRepo_iconCarrier">
+              <path
+                d="M12 3V4M12 20V21M4 12H3M6.31412 6.31412L5.5 5.5M17.6859 6.31412L18.5 5.5M6.31412 17.69L5.5 18.5001M17.6859 17.69L18.5 18.5001M21 12H20M16 12C16 14.2091 14.2091 16 12 16C9.79086 16 8 14.2091 8 12C8 9.79086 9.79086 8 12 8C14.2091 8 16 9.79086 16 12Z"
+                stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="dark:stroke-slate-500" />
+            </g>
+          </svg>
+          <span
+            class="dark:bg-slate-600 rounded-full w-9 h-9 flex items-center justify-center transition-all duration-900">
+            <svg width="64px" height="64px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+              class="w-8 z-50 dark:fill-white">
+              <g id="SVGRepo_bgCarrier" stroke-width="0" />
+              <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" />
+              <g id="SVGRepo_iconCarrier">
+                <path
+                  d="M3.32031 11.6835C3.32031 16.6541 7.34975 20.6835 12.3203 20.6835C16.1075 20.6835 19.3483 18.3443 20.6768 15.032C19.6402 15.4486 18.5059 15.6834 17.3203 15.6834C12.3497 15.6834 8.32031 11.654 8.32031 6.68342C8.32031 5.50338 8.55165 4.36259 8.96453 3.32996C5.65605 4.66028 3.32031 7.89912 3.32031 11.6835Z"
+                  stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              </g>
+            </svg>
+          </span>
+        </button>
+      </li>
+      <li>
+        <ul class="flex gap-10 items-center">
+          <li>
+            <a class="flex gap-2" href="#" target="_blank">
+              <img src="/github.svg" class="w-5" alt="git icon">
+              <span>Source code</span>
+            </a>
+          </li>
+          <li>
+            <a href="/Nataliia_Liubynets_Resume_JuniorFrontEnd.pdf" download class="flex gap-2">
+              <img src="/download.svg" alt="download icon" class="w-5">
+              <span>Download</span>
+            </a>
+          </li>
+          <li>
+            <button onclick="window.print();return false;" class="flex gap-2 cursor-pointer"><img src="/print.svg"
+                alt="print icon" class="w-5 "><span>Print</span></button>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <div
+    class="w-[950px] mx-auto mb-10 text-primary p-12 leading-5 bg-white dark:bg-gray-800 dark:text-white z-50 cursor-default print:text-black">
+
+    <header class="text-center mb-5">
+      <h1 class="text-4xl font-bold m-3">Nataliia Liubynets</h1>
+      <h3 class="text-lg m-3 text-secondary font-semibold">Junior Front-End Developer</h3>
+      <address class="flex justify-between gap-4 mb-3 not-italic">
+        <p><strong>Location:</strong> <span>Warsaw, Poland</span></p>
+        <p>
+          <strong>Email:</strong> <a href="mailto:liubynets.nataliia@gmail.com"
+            class="text-accent-dark dark:text-accent-light">liubynets.nataliia@gmail.com</a>
+        </p>
+        <p>
+          <strong>Profiles:</strong>
+          <a href="https://www.linkedin.com/in/nataliia-luibynets/" target="_blank"
+            class="text-accent-dark dark:text-accent-light">Linkedin</a>
+          <span>|</span>
+          <a href="https://github.com/IntToLong" target="_blank"
+            class="text-accent-dark dark:text-accent-light">Github</a>
+        </p>
+      </address>
+    </header>
+    <main>
+      <section class="my-4">
+        <h2 class="header-center">Summary</h2>
+        <p class="text-justify">Motivated Entry-Level Front-End Developer with a strong foundation in HTML, CSS,
+          JavaScript, and React.
+          Completed hands-on
+          projects, showcasing skills in responsive design, component-based architecture, and
+          API integration. Eager to
+          contribute to a collaborative team and grow within a dynamic development environment.</p>
+      </section>
+      <section class="my-4">
+        <h2 class="header-center">Technical Skills</h2>
+        <ul>
+          <li><strong>Core:</strong> HTML, CSS, JavaScript, React, Context API, Redux Toolkit, React Router, Tailwind
+            CSS
+          </li>
+          <li><strong>Testing & Tools:</strong> Jest, React Testing Library, Zod, Git</li>
+          <li><strong>Deployment & CI/CD:</strong> GitHub Pages, Vercel</li>
+          <li><strong>Familiar:</strong> Node.js, MongoDB, Express.js, Swagger, TypeScript, Next.js, Agile</li>
+        </ul>
+      </section>
+      <section class="my-4">
+        <h2 class="header-center">Certifications</h2>
+        <ul>
+          <li>AWS Cloud Quest: Cloud Practitioner – AWS</li>
+          <li>AWS Knowledge: Cloud Essentials – AWS</li>
+        </ul>
+      </section>
+      <section class="my-4">
+        <h2 class="header-center">Training & Education</h2>
+        <ul>
+          <li>
+            <strong>Academind by Maximilian Schwarzmüller</strong><br />
+            React – The Complete Guide (Udemy, 2025)
+          </li>
+          <li>
+            <strong>EPAM UpSkill Program</strong><br />
+            Front-End and JavaScript (Intermediate Level)<br />
+            TypeScript<br />
+            IT Fundamentals
+          </li>
+          <li>
+            <strong>Lviv Polytechnic National University</strong><br />
+            Bachelor's & Master's Degrees (Law)<br />
+            <em>Developed strong analytical thinking and problem-solving skills applicable to software
+              development.</em>
+          </li>
+        </ul>
+      </section>
+      <section class="my-4">
+        <h2 class="header-center">Projects</h2>
+        <article>
+          <h3 class="font-semibold">
+            <strong>QuickQuiz AI</strong> –
+            <a href="https://quick-quiz-delta.vercel.app/" target="_blank"
+              class="text-accent-dark dark:text-accent-light font-bold">Live Demo</a>
+            |
+            <a href="https://github.com/IntToLong/QuickQuiz" target="_blank"
+              class="text-accent-dark dark:text-accent-light font-bold">Github</a>
+          </h3>
+          <p>AI-powered quiz app using Gemini AI for personalized learning. Built with Next.js, Redux Toolkit, and
+            Jest.
+          </p>
+          <p><strong>Key Features:</strong></p>
+          <ul class="list-disc pl-5">
+            <li>AI-generated quizzes with adjustable complexity</li>
+            <li>Real-time scoring, feedback, and performance analysis</li>
+            <li>Modal-based UX for smooth interactions</li>
+            <li>Responsive design with strong test coverage</li>
+          </ul>
+          <p><strong>Tech Stack:</strong></p>
+          <ul class="list-disc pl-5">
+            <li>Next.js for frontend and routing</li>
+            <li>Redux Toolkit for state management</li>
+            <li>Jest + React Testing Library for unit testing</li>
+            <li>Google GenAI (Gemini) for quiz content generation</li>
+            <li>CSS Modules for scoped styling</li>
+            <li>Vercel with Git-based CI/CD automation.</li>
+          </ul>
+        </article>
+        <article class="mt-3">
+          <h3 class="font-semibold"><strong>Ukrify Chrome Extension</strong> – <a
+              href="https://chromewebstore.google.com/detail/ukrify/fbfgapejodfnnmfijbhkgjakcmbfbcpo?hl=uk&utm_source=ext_sidebar"
+              target="_blank" class="text-accent-dark dark:text-accent-light font-bold">Chrome Web Store</a> | <a
+              href="https://github.com/IntToLong/UKRIFY" target="_blank"
+              class="text-accent-dark dark:text-accent-light font-bold">Github</a>
+          </h3>
+          <p>Chrome extension for real-time conversion of English keyboard input to Ukrainian layout, enhancing
+            productivity for bilingual users.</p>
+          <p><strong>Key Features:</strong></p>
+          <ul class="list-disc pl-5">
+            <li>Converts mistakenly English text to its Ukrainian keyboard equivalent.</li>
+            <li>Supports direct text replacement within input fields, text areas, and rich content-editable elements
+              across various
+              websites.</li>
+            <li>Offers one-click copy-to-clipboard functionality for converted text, alongside direct insertion,
+              streamlining user
+              interaction.</li>
+            <li>Dynamically displays a pop-up panel and action button on text selection, adapting to different web page
+              layouts and
+              screen sizes.</li>
+            <li>Provides clear user guidance and fallback options (e.g., "Copy" prompt) when direct text insertion is
+              not feasible.</li>
+          </ul>
+          <p><strong>Tech Stack:</strong></p>
+          <ul class="list-disc pl-5">
+            <li>Vanilla JavaScript for core logic</li>
+            <li>CSS for styling</li>
+            <li>Clipboard API for copy-to-clipboard functionality</li>
+            <li>Vite for rapid development and bundling</li>
+          </ul>
+        </article>
+        <article class="mt-3">
+          <h3 class="font-semibold"><strong>Job Tracker</strong> – In Progress | <a
+              href="https://github.com/IntToLong/Job-tracker" target="_blank"
+              class="text-accent-dark dark:text-accent-light font-bold">Github</a>
+          </h3>
+          <p>Full-stack application built to streamline the job search process by allowing users to track and manage
+            job applications in one centralized dashboard.</p>
+          <p><strong>Key Features:</strong></p>
+          <ul class="list-disc pl-5">
+            <li>User authentication with login and registration</li>
+            <li>RESTful API for job and auth management</li>
+            <li>Interactive login and sign-up forms with validation</li>
+            <li>Swagger documentation for backend API</li>
+            <li>Seamless API communication using Axios</li>
+          </ul>
+          <p><strong>Tech Stack:</strong></p>
+          <ul class="list-disc pl-5">
+            <li>Express.js and MongoDB for backend development</li>
+            <li>React 19 + Vite for frontend</li>
+            <li>React Hook Form + Zod for form validation</li>
+            <li>Tailwind CSS for responsive UI design</li>
+            <li>Axios for client-server communication</li>
+          </ul>
+          <p><strong>In Progress:</strong></p>
+          <ul class="list-disc pl-5">
+            <li>User dashboard with job tracking features</li>
+            <li>CRUD operations for job entries</li>
+            <li>Role-based access control and protected routes</li>
+            <li>Fully responsive design for all devices</li>
+          </ul>
+        </article>
+      </section>
+      <section>
+        <h2 class="header-center">Languages</h2>
+        <ul>
+          <li><strong>Ukrainian</strong> – Native proficiency</li>
+          <li><strong>English</strong> – Professional working proficiency</li>
+        </ul>
+      </section>
+    </main>
+  </div>
+
+  <script type="module" src="/src/main.ts"></script>
+</body>
+
+</html>
