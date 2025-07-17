@@ -101,18 +101,24 @@ export const createStars = () => {
 
 	const loader = new THREE.TextureLoader();
 
-	loader.load('Resume/sp1.png', (texture1) => {
-		starsT1.material = new THREE.PointsMaterial({
-			size: 0.05,
-			map: texture1,
-			transparent: true,
-		});
-	});
-	loader.load('Resume/sp2.png', (texture2) => {
-		starsT2.material = new THREE.PointsMaterial({
-			size: 0.075,
-			map: texture2,
-			transparent: true,
-		});
-	});
+	loader.load(
+		'/Resume/sp1.png',
+		(texture1) => {
+			starsT1.material = new THREE.PointsMaterial({
+				size: 0.05,
+				map: texture1,
+				transparent: true,
+			});
+		}
+	);
+	loader.load(
+		'/Resume/sp2.png',
+		(texture2) => {
+			starsT2.material = new THREE.PointsMaterial({
+				size: 0.075,
+				map: texture2,
+				transparent: true,
+			});
+		}
+	);
 };
