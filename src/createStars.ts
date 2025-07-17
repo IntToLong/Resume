@@ -62,30 +62,13 @@ export const createStars = () => {
 		new THREE.BufferAttribute(getRandomParticelPos(1500), 3)
 	);
 
-	const loader = new THREE.TextureLoader();
+	const fallbackMaterial = new THREE.PointsMaterial({
+		size: 0.05,
+		color: 0xffffff,
+	});
 
-	// material
-	const materials = [
-		new THREE.PointsMaterial({
-			size: 0.05,
-			map: loader.load(
-				'https://raw.githubusercontent.com/Kuntal-Das/textures/main/sp1.png'
-			),
-			transparent: true,
-			// color: "#ff0000"
-		}),
-		new THREE.PointsMaterial({
-			size: 0.075,
-			map: loader.load(
-				'https://raw.githubusercontent.com/Kuntal-Das/textures/main/sp2.png'
-			),
-			transparent: true,
-			// color: "#0000ff"
-		}),
-	];
-
-	const starsT1 = new THREE.Points(geometrys[0], materials[0]);
-	const starsT2 = new THREE.Points(geometrys[1], materials[1]);
+	const starsT1 = new THREE.Points(geometrys[0], fallbackMaterial.clone());
+	const starsT2 = new THREE.Points(geometrys[1], fallbackMaterial.clone());
 	scene.add(starsT1);
 	scene.add(starsT2);
 
@@ -110,5 +93,26 @@ export const createStars = () => {
 		// loop
 		requestAnimationFrame(render);
 	};
-	requestAnimationFrame(render);
+
+	window.addEventListener('load', () => {
+		renderer.setSize(window.innerWidth, window.innerHeight, false);
+		requestAnimationFrame(render);
+	});
+
+	const loader = new THREE.TextureLoader();
+
+	loader.load('Resume/sp1.png', (texture1) => {
+		starsT1.material = new THREE.PointsMaterial({
+			size: 0.05,
+			map: texture1,
+			transparent: true,
+		});
+	});
+	loader.load('Resume/sp2.png', (texture2) => {
+		starsT2.material = new THREE.PointsMaterial({
+			size: 0.075,
+			map: texture2,
+			transparent: true,
+		});
+	});
 };
