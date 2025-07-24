@@ -30,3 +30,14 @@ html, body {
     padding: 0 !important;
 }
 
+@media print {
+  body {
+    background: white !important;
+    color: black !important;
+  }
+
+  .dark * {
+    background: transparent !important;
+    color: black !important;
+  }
+}
