@@ -69,10 +69,10 @@
     </ul>
   </div>
   <div
-    class="w-[950px] mx-auto mb-10 text-primary p-12 leading-5 bg-white dark:bg-gray-800 dark:text-white z-50 cursor-default print:text-black">
+    class="w-[950px] mx-auto mb-10 text-primary p-12 leading-5 bg-white dark:bg-gray-800 dark:text-white z-50 cursor-default print:text-black print:py-0 print:px-3">
 
     <header class="text-center mb-5">
-      <h1 class="text-4xl font-bold m-3">Nataliia Liubynets</h1>
+      <h1 class="text-4xl font-bold m-3 print:mt-0 print:text-3xl">Nataliia Liubynets</h1>
       <h3 class="text-lg m-3 text-secondary font-semibold">Junior Front-End Developer</h3>
       <address class="flex justify-between gap-4 mb-3 not-italic">
         <p><strong>Location:</strong> <span>Warsaw, Poland</span></p>
@@ -201,21 +201,27 @@
           <p><strong>Tech Stack:</strong> <span>React 19, Vite, Tailwind, Express.js, MongoDB, Zod, React Hook Form,
               Axios.</span>
           </p>
-          <p><strong>Key Features:</strong></p>
-          <ul class="list-disc pl-5">
-            <li>User authentication with login and registration</li>
-            <li>RESTful API for job and auth management</li>
-            <li>Interactive login and sign-up forms with validation</li>
-            <li>Swagger documentation for backend API</li>
-            <li>Seamless API communication using Axios</li>
-          </ul>
-          <p><strong>In Progress:</strong></p>
-          <ul class="list-disc pl-5">
-            <li>User dashboard with job tracking features</li>
-            <li>CRUD operations for job entries</li>
-            <li>Role-based access control and protected routes</li>
-            <li>Fully responsive design for all devices</li>
-          </ul>
+          <div class="print:flex print:gap-20">
+            <div>
+              <p><strong>Key Features:</strong></p>
+              <ul class="list-disc pl-5">
+                <li>User authentication with login and registration</li>
+                <li>RESTful API for job and auth management</li>
+                <li>Interactive login and sign-up forms with validation</li>
+                <li>Swagger documentation for backend API</li>
+                <li>Seamless API communication using Axios</li>
+              </ul>
+            </div>
+            <div>
+              <p><strong>In Progress:</strong></p>
+              <ul class="list-disc pl-5">
+                <li>User dashboard with job tracking features</li>
+                <li>CRUD operations for job entries</li>
+                <li>Role-based access control and protected routes</li>
+                <li>Fully responsive design for all devices</li>
+              </ul>
+            </div>
+          </div>
         </article>
       </section>
       <section>
